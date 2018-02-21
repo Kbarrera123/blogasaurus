@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css_files/Contact_Me.css">
+    <style>
+  @import url('https://fonts.googleapis.com/css?family=Bitter|Hind');
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="js_files/comments.js">
+  </script>
+
+  </head>
+
+  <body>
+  <div id="page">
+  <h1>Contact Me</h1>
+
+  {% include "html_files/navigation.html" %}
+
+
+  </div>
+
+  <div id="content">
+
+    <p>Contact me if you must. Business inquiries only.</p>
+
+    <h2>Email</h2>
+
+    <p>kaylabarrera2@gmail.com</p>
+
+
+
+    <h2>Leave a comment</h2>
+
+    <p><i>Your feedback is appreciated.</i></p>
+
+
+    <form id="comment-form" action="javascript:void(0);">
+        <textarea id="comment-content" name="content"></textarea>
+        <input type="submit" value="Post Comment">
+      </form>
+
+    <h2>Comments</h2>
+      <div id="comments">
+        <p id="no-comments">There are no comments on this post yet.</p>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+
+  </div>
+
+
+
+  </body>
+</html>

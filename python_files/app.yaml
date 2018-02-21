@@ -1,0 +1,28 @@
+application: kaylablogasaurus
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /css_files
+  static_dir: css_files
+
+- url: /js_files
+  static_dir: js_files
+
+- url: /templates
+  static_dir: templates
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: jinja2
+  version: latest
+- name: webapp2
+  version: "2.5.2"

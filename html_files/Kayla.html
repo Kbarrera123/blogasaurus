@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="css_files/Kayla.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="js_files/scroll.js">
+  </script>
+
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Bitter|Hind');
+</style>
+</head>
+
+<title>Kayla Barrera's Profile</title>
+
+<body>
+
+<div id="page">
+{{ greeting }}
+<!-- <a               href=https://www.google.com/accounts/ServiceLogin?service=ah&passive=true&continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttp://kaylablogasaurus.appspot.com/>Please log in.</a>
+
+ <p>
+<a class="login" href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttps://cssi-blogasaurus-stage-6.appspot.com/">Sign In with a Google Account</a></p>
+
+
+<p><a class="login" href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3D">Sign In with a Google Account</a></p>
+-->
+
+{% if user == "nobloguser" %}
+No blog for you!
+{% else %}
+<h1>Kayla's Blogasaurus</h1>
+
+{% include "html_files/navigation.html" %}
+
+
+</div>
+<div id="content">
+
+<br>
+<br>
+
+
+<img src="https://lh3.googleusercontent.com/-ZDOH4Wx2s1A/WSrn9BEDF3I/AAAAAAAAAIc/u6y63iYInMEbrjh4f1-g_WxLuThloMKNgCJoC/s400-rw/kayla.gif" alt="Photo of Kayla Barrera Androidify">
+
+<br>
+<br>
+
+<h1>About Me</h1>
+
+<h2>Status</h2>
+<p>I am attending Google CSSI in Cambridge.</p>
+
+<img src="https://www.blog.google/images/download/DvujqGIr46dew-phGARpDy8bMSQ=/1095/original/Google_Logo.png" alt="Google Logo">
+
+<h2>Hobbies</h2>
+<p>I like art, reading, and photography.</p>
+
+<h2>Hometown</h2>
+<p>Gainesville, FL</p>
+
+<img src="https://static1.squarespace.com/static/5471d1a1e4b006b988fa8e04/t/547b3a04e4b0464e56d6fc76/1417361925162/campuscycling.jpg?format=1500w" alt="Photo of Gainesville">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+<img src="http://pics2.city-data.com/city/maps/fr261.png" alt=map of gainesville>
+
+<h2>Education</h2>
+<ul>
+  <li>Gainesville High School</li>
+  <li>University of Florida</li>
+</ul>
+
+&nbsp;
+
+<img src="https://alumni.ncsy.org/content/uploads/2016/06/University_of_Florida_Logo.svg_.png" alt="UF logo">
+
+&nbsp;
+
+<h2>Pets</h2>
+<p>One Cat named "Cookie"</p>
+
+<a href="https://www.instagram.com/cookie_catman/"target="_blank">Cookie's Instagram Page</a>
+
+&nbsp;
+
+<h2>Favorite Websites</h2>
+<ul>
+  <li><a href="https://www.google.com/"target="_blank">Google</a></li>
+  <li><a href="https://www.youtube.com/"target="_blank">YouTube</a></li>
+</ul>
+
+
+
+<h2>Recent Reads</h2>
+<ol>
+  <li><i>Girl on a Train</i> , Paula Hawkins</li>
+  <li><i>Gone Girl</i> , Gillian Flynn</li>
+  <li><i>Me and Earl and the Dying Girl</i> , Jesse Andrews</li>
+  <li><i>The Perks of Being a Wallflower</i> , Stephen Chbosky</li>
+  <li><i>Let's Explore Diabetes with Owls</i> , David Sedaris</li>
+</ol>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+{% endif %}
+</div>
+</body>
